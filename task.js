@@ -9,6 +9,8 @@
 // - convertFahrToCelsius("0") should return `-17.7778`
 // - convertFahrToCelsius([1,2,3]) should return `[1,2,3] is not a valid number but a/an array.`
 // - convertFahrToCelsius({temp: 0}) should return `{"temp": 0} is not a valid number but a/an object.`
+
+
 function convertFahrToCelsius (num) {
     convertToNum = isNaN(num);
     checkForType = typeof(num);
@@ -44,6 +46,7 @@ function convertFahrToCelsius (num) {
         return finalAns;
     }
 }
+
 // 2. Write a function named "checkYuGiOh" that takes a number, n, as an argument, creates an array of numbers from 1 to n and 
 // replaces multiples of 2, 3, and 5 with "yu", "gi" and "oh", then returns the resulting array.
 // Note:
@@ -54,6 +57,7 @@ function convertFahrToCelsius (num) {
 // - checkYuGiOh(10) should return [1, "yu", "gi", "yu", "oh", "yu-gi", 7, "yu", "gi", "yu-oh"]
 // - checkYuGiOh("5") should return [1, "yu", "gi", "yu", "oh"]
 // - checkYuGiOh("fizzbuzz is meh") should return `invalid parameter: "fizzbuzz is meh"`
+
 function checkYuGiOh(n) {
     convertN = isNaN(n);
     let arr = [];
